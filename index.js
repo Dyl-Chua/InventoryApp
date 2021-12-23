@@ -15,7 +15,11 @@ const getData = () => {
         {
             "starred": 0,
             "syncToken": 0,
+<<<<<<< HEAD
             "number": number,
+=======
+            "number": "SO-45678",
+>>>>>>> main
             "date": "2021-12-11T04:00:00",
             "customer": {
                 "name": "Syahmi"
