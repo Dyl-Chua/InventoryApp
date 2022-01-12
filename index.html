@@ -10,15 +10,32 @@
   <script src="index.js" defer></script>
 </head>
 <body>
-<form method="post">
-  <input type="text" id="number" name="number">
-</form>
-  <section id="control-center">
-  
-  <button id="get-btn">GET Data</button>
-    <button id="post-btn">POST Data</button>
+<h1>Create Shipment</h1>
+<form method="post" id="form">
+  <label for="number">Number</label>
+  <input type="text" id="number" name="number"><br><br>
+  <label for="customer">Customer</label>
+  <input type="text" id="customer" name="customer"><br><br>
+  <label for="itemname">Item Name</label>
+  <input type="text" id="itemname" name="itemname"><br><br>
+  <label for="quantity">Quantity</label>
+  <input type="text" id="quantity" name="quantity"><br><br>
+  <label for="itemname2">Item Name</label>
+  <input type="text" id="itemname2" name="itemname2"><br><br>
+  <label for="quantity2">Quantity2</label>
+  <input type="text" id="quantity2" name="quantity2"><br><br>
 
+</form>
+
+<center>
+<div class="control" id="control">
+  <section id="control-center">
+  <div class="button" id="button">
+  <button id="get-btn">GET Data</button>
+    <button id="post-btn">Send Shipment</button>
   </section>
+</div>
+</center>
 
  
    

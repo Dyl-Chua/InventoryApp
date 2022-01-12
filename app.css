@@ -5,7 +5,26 @@ html {
   body {
     margin: 0;
   }
-  
+
+
+
+
+  h1{
+    text-align: center;
+  }
+
+  form{
+    font: inherit;
+    height: 50%;
+    width: 50%;
+    background: rgb(191, 191, 247);
+    margin: auto;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+
+ 
   button {
     font: inherit;
     background: #5102ac;
@@ -14,6 +33,7 @@ html {
     cursor: pointer;
     padding: 1.25rem 2.5rem;
     font-size: 1.5rem;
+    text-align: center;
   }
   
   button:focus {

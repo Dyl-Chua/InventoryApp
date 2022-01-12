@@ -7,30 +7,40 @@ const getData = () => {
     });
   };
 
-  const sendData = () => {
+  const sendShipment = () => {
     var number = document.getElementById("number").value;
+    var customer = document.getElementById("customer").value;
+    var itemname = document.getElementById("itemname").value;
+    var quantity = document.getElementById("quantity").value;  
+    var itemname2 = document.getElementById("itemname2").value;
+    var quantity2 = document.getElementById("quantity2").value;
+   
     axios
       .post(
         'https://api.sosinventory.com/api/v2/shipment',
         {
             "starred": 0,
             "syncToken": 0,
-<<<<<<< HEAD
             "number": number,
-=======
-            "number": "SO-45678",
->>>>>>> main
-            "date": "2021-12-11T04:00:00",
+            "date": "2022-01-12T17:00:00",
             "customer": {
-                "name": "Syahmi"
+                "name": customer
             },
             "lines": [ {
                 "lineNumber": 1,
                     "item": {
-                        "name": "1311TK004",
-                     "quantity": 161.00000
-                    }
-            }]
+                        "name": itemname,
+                     "quantity": quantity
+                    },
+                    
+            },
+            {
+            "lineNumber": 2,
+            "item": {
+                "name": itemname2,
+             "quantity": quantity2
+            }
+          }]
         },
         {
           headers: {
@@ -50,4 +60,4 @@ const getData = () => {
 
   
 getBtn.addEventListener('click', getData);
-postBtn.addEventListener('click', sendData);
+postBtn.addEventListener('click', sendShipment);
